@@ -1,0 +1,37 @@
+/* Bibliotek til vigtige generelle ting så man ikke skal huske fx farvekoder hele tiden */
+:root {
+  /* COLOR */
+  --background-color: #fef5f4;
+  --sakura-festival-food-color: #bf5468;
+  --main-red: #9f1d1d;
+  --black: #000000;
+
+  /* FONTS */
+  --body: "Jost-VariableFont_wght.ttf";
+  --body: "Inter-VariableFont_slnt,wght.ttf";
+  --h1-font-size: ;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: Inter;
+}
+
+p {
+  color: aliceblue;
+  font-family: Jost;
+}
+
+.card {
+  background-color: yellow;
+}
