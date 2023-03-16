@@ -15,6 +15,10 @@
           <span></span>
         </div>
       </div>
+      <div class="icon">
+        <img src="../../public/instagram.png" alt="">
+        <img src="../../public/facebook.png" alt="">
+      </div>
       <div class="menu">
         <ul>
           <li><a href="#">Become a volunteer</a></li>
@@ -26,12 +30,28 @@
     </footer>
     
     <style>
+
+      :root{
+         /* COLOR */
+ --background-color: #fef5f4;
+  --sakura-festival-food-color: #bf5468;
+  --main-red: #9f1d1d;
+  --black: #000000;
+      }
+
+.icon{ 
+  display: grid;
+  padding: 1rem;
+}
+.icon :nth-child(n){
+  margin: 0.3rem;
+}
       footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 2rem;
-        background-color:  #9f1d1d;
+        background-color: var(--main-red);
       }
     
       .menu ul {
@@ -47,7 +67,7 @@
       }
     
       .menu a {
-        color:#fef5f4;
+        color:var(--background-color);
         text-decoration: none;
         font-size: 1.2rem;
   
@@ -55,6 +75,8 @@
     
       .contact {
         text-align: left;
+        color: var(--background-color);
+        font-family: Jost;
       }
     
       .phone {
@@ -69,24 +91,26 @@
       }
     
       .phone a {
-        color: #333;
+        color: var(--background-color);
         text-decoration: none;
       }
     
       .email {
         margin-bottom: 1rem;
+        
       }
     
       .email a {
-        color: #333;
         text-decoration: none;
         font-size: 1.2rem;
+        color: var(--background-color);
       }
     
       .address span {
         display: block;
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
+    
       }
     </style>
     

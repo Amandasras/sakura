@@ -23,15 +23,7 @@ img {
   max-width: 100%;
 }
 
-h1 {
-  font-family: Inter;
-}
-
-p {
-  color: aliceblue;
-  font-family: Jost;
-}
-
-.card {
-  background-color: yellow;
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-Italic-VariableFont_wght.ttf');
 }
