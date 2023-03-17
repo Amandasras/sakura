@@ -3,14 +3,13 @@
 // const text = Astro.props.text;
 
 // const {header, text}=Astro.props;
-const { header } = Astro.props;
+const { name, image, location, from, to } = Astro.props;
 ---
 
 <article class="card">
-  <h1>hej</h1>
-  <h2>{header}</h2>
-  <!-- <p>{text}</p> -->
-  <p>kortere lorem</p>
+  <h2>{name}</h2>
+  <img src={image} alt="" />
+  <p>{location}</p>
   <slot />
 </article>
 
