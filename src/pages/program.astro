@@ -17,6 +17,13 @@ console.log(data);
 ---
 
 <Layout title="Program">
+  <section class="card">
+{
+  data.map(show =>{
+    return <Card />
+  })
+}
+  </section>
   <h1>Program</h1>
   <Card name="Kimono" />
 </Layout>
