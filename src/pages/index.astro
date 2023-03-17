@@ -1,30 +1,17 @@
 ---
-import "../styles/style2.css";
-import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../layout/Layout.astro";
+import "../styles/indexstyle.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <Navigation />
-
-    <main>
-      <h1>Sakura Festival</h1>
-      <p>2 days of japanese</p>
-      <h2>FOOD</h2>
-      <h2>CULTURE</h2>
-      <h2>MARTIAL ARTS</h2>
-      <h2>MUSIC</h2>
-    </main>
-    <Footer />
-  </body>
-</html>
+<Layout>
+  <div id="first_words">
+    <h1>Sakura Festival</h1>
+    <p>2 days of japanese</p>
+  </div>
+  <article id="splash_words">
+    <h2 class="food">FOOD</h2>
+    <h2 class="culture">CULTURE</h2>
+    <h2 class="martial arts">MARTIAL ARTS</h2>
+    <h2 class="music">MUSIC</h2>
+  </article>
+</Layout>
