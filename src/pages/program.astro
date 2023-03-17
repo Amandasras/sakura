@@ -2,9 +2,21 @@
 import Card from "../components/Card.astro";
 import Layout from "../layout/Layout.astro";
 import "../styles/style2.css";
+
+const data = await fetch ("https://mzykwgcazuwilcangncr.supabase.co/rest/v1/sakurafestival",
+{
+  method: "GET", 
+  headers:{
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im16eWt3Z2NhenV3aWxjYW5nbmNyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3ODYzODAsImV4cCI6MTk5NDM2MjM4MH0.avfm3ZRaeO1T79xBNSsZ_lFuVf1D42bpuOvXPUfv7Fw"
+  },
+ }
+).then((res) => res.json());
+
+console.log(data); 
 ---
 
 <Layout title="Program">
   <h1>Program</h1>
   <Card name="Kimono" />
 </Layout>
+
