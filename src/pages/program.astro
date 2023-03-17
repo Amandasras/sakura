@@ -1,27 +1,8 @@
 ---
+import Layout from "../layout/Layout.astro";
 import "../styles/style2.css";
-import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Program</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <Navigation />
-    <h1>Program</h1>
-    <p>Program side</p>
-    <main class="card">
-      <Card header="hej Verden">
-        <img src="/Sakura_kort-kopi.png" alt="kort" />
-        <button>hej</button>
-      </Card>
-    </main>
-  </body>
-</html>
+<Layout title="Program">
+  <h1>Program</h1>
+</Layout>
