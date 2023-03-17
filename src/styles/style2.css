@@ -24,6 +24,18 @@ img {
 }
 
 @font-face {
-  font-family: 'Jost';
-  src: url('../fonts/Jost-Italic-VariableFont_wght.ttf');
+  font-family: "Jost";
+  src: url("../fonts/Jost-Italic-VariableFont_wght.ttf");
+}
+h1 {
+  font-family: Inter;
+}
+
+p {
+  color: rgb(0, 23, 44);
+  font-family: Jost;
+}
+
+.card {
+  background-color: yellow;
 }

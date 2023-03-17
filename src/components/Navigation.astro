@@ -1,105 +1,12 @@
 ---
+import "../styles/style2.css";
 ---
 
-<!-- 
 <header>
-  <button class="hamburger" aria-label="Toggle Menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <nav class="menu">
-    <ul class="links">
-      <li><a href="#">Link 1</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3</a></li>
-      <li><a href="#">Link 4</a></li>
-      <li><a href="#">Link 5</a></li>
-    </ul>
-  </nav>
-</header>
-
-<style>
-  header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 2rem;
-    background-color: #333;
-    color: #fff;
-  }
-
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 2rem;
-    height: 1.5rem;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .hamburger span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .menu.active {
-    z-index: 1;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .links li {
-    margin-bottom: 1rem;
-  }
-
-  .links a {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-</style>
-
-<script>
-  const hamburger = document.querySelector(".hamburger");
-  const menu = document.querySelector(".menu");
-
-  hamburger.addEventListener("click", () => {
-    menu.classList.toggle("active");
-  });
-</script> -->
-<header>
+  <li class="logo">
+    <a href="/index"><img src="../../public/logo.png" alt="logo" /></a>
+  </li>
+  <p>22/4-23/4</p>
   <button class="hamburger" aria-label="Toggle Menu">
     <span></span>
     <span></span>
@@ -111,8 +18,8 @@
       <span></span>
     </button>
     <ul class="links">
-      <li><a href="#">PROGRAM</a></li>
-      <li><a href="#">YOUR PROGRAM</a></li>
+      <li><a href="/program">PROGRAM</a></li>
+      <li><a href="/yourprogram">YOUR PROGRAM</a></li>
       <li><a href="#">ABOUT US</a></li>
       <li><a href="#">NAVIGATION</a></li>
       <li><a href="#">BECOME A VOLUNTEER</a></li>
@@ -121,11 +28,18 @@
 </header>
 
 <style>
+  .logo {
+    justify-self: flex-start;
+    width: 4rem;
+    border: none;
+    background-color: #fef5f4;
+  }
+
   header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 
     color: rgb(255, 255, 255);
   }
@@ -135,8 +49,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 2rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2rem;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -211,7 +125,7 @@
   }
 
   .links a {
-    color: #fff;
+    color: #fef5f4;
     font-size: 4rem;
     text-decoration: none;
     text-transform: uppercase;
