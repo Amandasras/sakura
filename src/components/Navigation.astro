@@ -5,8 +5,9 @@ import "../styles/style2.css";
 <header>
   <li class="logo">
     <a href="/index"><img src="../../public/logo.png" alt="logo" /></a>
+    <div class="text">22/4 - 23/4</div>
   </li>
-  <p>22/4-23/4</p>
+
   <button class="hamburger" aria-label="Toggle Menu">
     <span></span>
     <span></span>
@@ -26,6 +27,30 @@ import "../styles/style2.css";
     </ul>
   </nav>
 </header>
+<body>
+  <!-- <section class="coming-soon"> -->
+    <div>
+      <div class="countdown">
+        <div class="container-day">
+          <h3 class="day"></h3>
+          <h3>D</h3>
+        </div>
+        <div class="container-hour">
+          <h3 class="hour"></h3>
+          <h3>H</h3>
+        </div>
+        <div class="container-minute">
+          <h3 class="minute"></h3>
+          <h3>M</h3>
+        </div>
+        <div class="container-second">
+          <h3 class="second"></h3>
+          <h3>S</h3>
+        </div>
+      </div>
+    </div>
+  <!-- </section> -->
+</body>
 
 <style>
   .logo {
@@ -33,14 +58,23 @@ import "../styles/style2.css";
     width: 4rem;
     border: none;
     background-color: #fef5f4;
+    white-space: nowrap;
+    
   }
-
+  .text {
+   color: black;
+   font-family: jost;
+   display: flex;
+   justify-content: flex-start;
+   margin-left: 90px;
+   margin-top: -4.6em;
+    font-weight: bolder;
+  }
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-
     color: rgb(255, 255, 255);
   }
 
@@ -130,6 +164,255 @@ import "../styles/style2.css";
     text-decoration: none;
     text-transform: uppercase;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h3 {
+    font-size: 15px;
+    font-family: jost;
+    font-weight: normal;
+    justify-content:space-between;
+    
+}
+.countdown {
+    display: flex;
+    padding: 1%;
+    display: flex;
+    align-items: left;
+    margin-left: 95px;
+    margin-top: -3%;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 15px;
+    margin-right: 3rem;
+    
+}
+.waiting {
+    height: 50vh;
+}
+
+@media screen and (min-width: 400px){
+  .countdown {
+    font-size: 12px;
+    margin-top: -7%;
+  }
+  .links a {
+    color: #fef5f4;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.links {
+  margin-top: 5%;
+}
+  
+  h3 {
+    font-size: 12px;
+  }
+  .logo {
+    width: 20%;
+    margin-left: -8%;
+    margin-top: -6%;
+  }
+  .text {
+    margin-left: 160%;
+  }
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 12px;
+    margin-right: 2rem;
+    
+}
+}
+@media screen and (min-width: 500px){
+  .countdown {
+    font-size: 13px;
+    margin-top: -7%;
+  }
+  .links a {
+    color: #fef5f4;
+    font-size: 2.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.links {
+  margin-top: 6%;
+}
+  h3 {
+    font-size: 12px;
+  }
+  .logo {
+    width:15%;
+    margin-left: -6%;
+    margin-top: -5%;
+  }
+  .text {
+    margin-left: 160%;
+  }
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 13px;
+    margin-right: 2rem;
+    
+}
+}
+@media screen and (min-width: 700px){
+  .countdown {
+    font-size: 13px;
+    margin-top: -4%;
+    margin-left: 14.5%;
+  }
+  .links a {
+    color: #fef5f4;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.links {
+  margin-top: 5%;
+}
+  h3 {
+    font-size: 12px;
+  }
+  .logo {
+    width:10%;
+    margin-left: -3%;
+    margin-top: -3%;
+  }
+  .text {
+    margin-left: 170%;
+  }
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 16px;
+    margin-right: 1.8rem;
+    
+}
+}
+@media screen and (min-width: 900px){
+  .countdown {
+    font-size: 16px;
+    margin-top: -3%;
+    margin-left: 14%;
+  }
+  .links a {
+    color: #fef5f4;
+    font-size: 3.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.links {
+  margin-top: 7%;
+}
+  h3 {
+    font-size: 16px;
+  }
+  .logo {
+    width:10%;
+    margin-left: -3%;
+    margin-top: -1%;
+  }
+  .text {
+    margin-left: 170%;
+    font-size: 19px;
+  }
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 16px;
+    margin-right: 1.8rem;
+    
+}
+}
+@media screen and (min-width: 1200px){
+  .countdown {
+    font-size: 20px;
+    margin-top: -3%;
+    margin-left: 14%;
+  }
+  .links a {
+    color: #fef5f4;
+    font-size: 5.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.links {
+  margin-top: 5%;
+}
+  h3 {
+    font-size: 20px;
+  }
+  .logo {
+    width:10%;
+    margin-left: -2%;
+    margin-top: -1%;
+  }
+  .text {
+    margin-left: 164%;
+    font-size: 25px;
+  }
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 22px;
+    margin-right: 1.8rem;
+    padding: 5px;
+}
+}
+@media screen and (min-width: 1400px){
+  .countdown {
+    font-size: 20px;
+    margin-top: -3%;
+    margin-left: 10%;
+  }
+  .links a {
+    color: #fef5f4;
+    font-size: 6.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.links {
+  margin-top: 3%;
+}
+  h3 {
+    font-size: 22px;
+  }
+  .logo {
+    width:8%;
+    margin-left: -2%;
+    margin-top: -1%;
+  }
+  .text {
+    margin-left: 164%;
+    font-size: 24px;
+  }
+.day,
+.hour,
+.minute, 
+.second {
+    font-size: 22px;
+    margin-right: 1rem;
+    padding: 10px;
+}
+}
 </style>
 <script>
   const hamburger = document.querySelector(".hamburger");
@@ -138,4 +421,34 @@ import "../styles/style2.css";
   hamburger.addEventListener("click", () => {
     menu.classList.toggle("active");
   });
+
+  const countdown = () => {
+    //date og time
+    const countDate = new Date("April 22, 2023 12:00:00");
+    const now = new Date().getTime();
+
+    //remaining time
+    const remainingTime = countDate - now;
+
+    //workout time in days etc
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
+
+    const textDay = Math.floor(remainingTime / day);
+    const textHour = Math.floor((remainingTime % day) / hour);
+    const textMinute = Math.floor((remainingTime % hour) / minute);
+    const textSecond = Math.floor((remainingTime % minute) / second);
+
+    //check the time is past 0
+    document.querySelector(".day").innerHTML = textDay > 0 ? textDay : 0;
+    document.querySelector(".hour").innerHTML = textHour > 0 ? textHour : 0;
+    document.querySelector(".minute").innerHTML = textMinute > 0 ? textMinute : 0;
+    document.querySelector(".second").innerHTML = textSecond > 0 ? textSecond : 0;
+}
+
+//run every 500ms
+setInterval(countdown, 500);
+
 </script>
