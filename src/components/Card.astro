@@ -13,43 +13,61 @@ const { name, image, location, from, to } = Astro.props;
   <slot />
 </article> -->
 
-<div class="card">
-  <img src="png/aikido.png" alt="Card Image" width="400" height="320">
+<!-- <div class="card">
+  <img src="png/calligraphy.png" alt="Card Image" width="400" height="320">
   <div class="card-body">
     <h5 class="card-title">Headline</h5>
     <p class="card-text">Main Stage</p>
     <p class="card-text">From: 10:00 AM</p>
     <p class="card-text">To: 12:00 PM</p>
   </div>
-</div>
+</div> -->
+
 <div class="card">
-  <img src="png/aikido.png" alt="Card Image" width="400" height="320">
-  <div class="card-body">
+  <div class="card-img-container">
+    <img src="png/karatekids.png" alt="Card Image" width="400" height="320">
     <h5 class="card-title">Headline</h5>
+  </div>
+  <div class="card-body">
     <p class="card-text">Main Stage</p>
     <p class="card-text">From: 10:00 AM</p>
     <p class="card-text">To: 12:00 PM</p>
   </div>
 </div>
 
+
 <style>
-  .card {
-  width: 400px;
+
+
+
+ .card {
+  width: 480px;
   margin: 20px;
 }
 
-.card img {
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+}
 
+.card-img-container img {
+  display: block;
+  width: 100%;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  color: 0000;
+  background-color: #fef5f4;
 }
 
 .card-body {
   padding: 20px;
-}
-
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
 }
 
 .card-text {
