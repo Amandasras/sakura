@@ -11,6 +11,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* forside splash */
 #first_words {
   display: flex;
   flex-direction: column;
@@ -40,12 +42,13 @@
   font-family: inter;
   color: #fef5f4;
   font-size: 10vw;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #bf5468;
   text-align: center;
   grid-column: 3/4;
   grid-row: 1/2;
   margin-left: 0.7em;
+  margin-bottom: 0.1em;
 }
 
 .culture {
@@ -55,7 +58,7 @@
   text-align: center;
   grid-column: 4/5;
   grid-row: 1/2;
-  /* margin-left: 0.5em; */
+  margin-bottom: 0;
 }
 
 .martial_arts {
@@ -65,17 +68,211 @@
   text-align: center;
   grid-column: 1/5;
   grid-row: 2/3;
-  margin: 0 2.3em 20em 0;
+  margin: 0 2.8em 5em 0.5em;
 }
 
 .music {
   font-family: inter;
   color: #fef5f4;
   font-size: 8vw;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #bf5468;
   text-align: center;
   grid-column: 3/6;
   grid-row: 2/3;
   margin: 0 0 0 7.5em;
+}
+
+/* Knapper */
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+.saturday {
+  background-color: inherit;
+  border-radius: 2px;
+  border-color: #9f1d1d;
+  color: #fef5f4;
+  padding: 15px 32px;
+  width: 80%;
+  height: 40%;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.saturday a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 5vw;
+  font-family: inter;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.sunday {
+  background-color: inherit;
+  border-radius: 2px;
+  border-color: #9f1d1d;
+  color: #fef5f4;
+  padding: 15px 32px;
+  width: 80%;
+  height: 40%;
+  align-self: center;
+  margin-bottom: 6rem;
+}
+
+.sunday a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 5vw;
+  font-family: inter;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.sunday:hover,
+.sunday a:hover {
+  background-color: #9f1d1d;
+  color: #fef5f4;
+}
+.saturday:hover,
+.saturday a:hover {
+  background-color: #9f1d1d;
+  color: #fef5f4;
+}
+
+h2 {
+  font-family: inter;
+  font-weight: 400;
+  color: #9f1d1d;
+  margin-left: 3rem;
+}
+
+p {
+  margin-left: 3rem;
+  width: 70vw;
+  font-family: inter;
+  font-weight: 300;
+}
+/* ************************************************************************************************************ */
+@media (min-width: 600px) {
+  #first_words {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #first_words h1 {
+    align-self: center;
+    font-family: inter;
+    color: #bf5468;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 3vw;
+  }
+  #first_words p {
+    align-self: center;
+    font-family: inter;
+    margin: 0;
+    font-size: 1.5vw;
+  }
+
+  #splash_words {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+  }
+  .food {
+    font-family: inter;
+    color: #fef5f4;
+    font-size: 8vw;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #bf5468;
+    text-align: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 0.1em 0 0 0.7em;
+  }
+
+  .culture {
+    color: black;
+    font-size: 8vw;
+    font-family: inter;
+    text-align: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    margin: 0.1em 0 0 0;
+  }
+
+  .martial_arts {
+    color: #9f1d1d;
+    font-size: 6vw;
+    font-family: inter;
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 0 2em 1em 0.5em;
+  }
+
+  .music {
+    font-family: inter;
+    color: #fef5f4;
+    font-size: 6vw;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #bf5468;
+    text-align: center;
+    grid-column: 3/6;
+    grid-row: 2/3;
+    margin: 0 0 1em 7.5em;
+  }
+
+  /* Knapper */
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .saturday {
+    background-color: inherit;
+    border-radius: 2px;
+    border-color: #9f1d1d;
+    color: #fef5f4;
+    padding: 15px 32px;
+    width: 40%;
+    height: 40%;
+    align-self: center;
+    margin-bottom: 5rem;
+  }
+
+  .saturday a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+    font-family: inter;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .sunday {
+    background-color: inherit;
+    border-radius: 2px;
+    border-color: #9f1d1d;
+    color: #fef5f4;
+    padding: 15px 32px;
+    width: 40%;
+    height: 40%;
+    margin: 0 0 5rem 0;
+  }
+
+  .sunday a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+    font-family: inter;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
 }
