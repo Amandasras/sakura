@@ -30,8 +30,8 @@ const { name, image, location, from, to } = Astro.props;
   </div>
   <div class="card-body">
     <p class="card-text">Main Stage</p>
-    <p class="card-text">From: 10:00 AM</p>
-    <p class="card-text">To: 12:00 PM</p>
+    <p class="card-text">KL. 10:00 - 12:00 </p>
+    <p class="card-text"> </p>
   </div>
 </div>
 
@@ -58,21 +58,25 @@ const { name, image, location, from, to } = Astro.props;
 .card-title {
   position: absolute;
   bottom: 0px;
-  left: 10px;
+  left: 0px;
   font-size: 30px;
   font-weight: bold;
   margin: 0;
   color: 0000;
   background-color: #fef5f4;
+  padding: 10px 10px 10px 0px;
 }
 
 .card-body {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .card-text {
+ 
   font-size: 18px;
-  margin: 10px 0;
+  margin: 0 0;
 }
 
 </style>
