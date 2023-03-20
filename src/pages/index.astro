@@ -23,7 +23,7 @@ import "../styles/indexstyle.css";
 
     <hr />
 
-    <h2>ABOUT US</h2>
+    <h2 class="h2">ABOUT US</h2>
     <p>
       Welcome to the Copenhagen Sakura Festival, a celebration of the blooming
       cherry blossom trees, known as sakura in Japanese. Our festival is a
@@ -34,8 +34,42 @@ import "../styles/indexstyle.css";
       and private organizations. Join us to experience the beauty of sakura and
       connect with others in Langelinie Park.
     </p>
-    <img src="" alt="" />
 
-    <button>READ MORE</button>
+    <button class="readmore"> <a href="/aboutus">READ MORE</a></button>
+
+    <div class="image"></div>
+
+    <h2 class="h2">MAPS</h2>
+    <article class="mapsinfo">
+      <button class="maps"><a href="/navigation"></a></button>
+
+      <ul>
+        <p>A - Main Stage</p>
+        <p>B - Second Stage</p>
+        <p>C - On The Lawn</p>
+      </ul>
+    </article>
+
+    <h2 class="stayupdated">STAY UPDATED</h2>
+    <article class="forms">
+      <div>
+        <label for="name">Navn:</label>
+        <input
+          type="text"
+          placeholder="Anne Kristensen"
+          id="name"
+          name="name"
+        />
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          placeholder="Anne@Kristensen.dk"
+          id="email"
+          name="email"
+        />
+      </div>
+    </article>
   </section>
 </Layout>

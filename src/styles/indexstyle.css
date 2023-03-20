@@ -31,6 +31,7 @@
   font-family: inter;
   margin: 0;
   font-size: 2.5vw;
+  text-align: center;
 }
 
 #splash_words {
@@ -42,6 +43,7 @@
   font-family: inter;
   color: #fef5f4;
   font-size: 10vw;
+  font-weight: 700;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #bf5468;
   text-align: center;
@@ -68,19 +70,20 @@
   text-align: center;
   grid-column: 1/5;
   grid-row: 2/3;
-  margin: 0 2.8em 5em 0.5em;
+  margin: 0 3.1em 5em 0.5em;
 }
 
 .music {
   font-family: inter;
   color: #fef5f4;
   font-size: 8vw;
+  font-weight: 700;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #bf5468;
   text-align: center;
   grid-column: 3/6;
   grid-row: 2/3;
-  margin: 0 0 0 7.5em;
+  margin: 0 0 0 8em;
 }
 
 /* Knapper */
@@ -97,7 +100,7 @@
   width: 80%;
   height: 40%;
   align-self: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .saturday a {
@@ -119,7 +122,7 @@
   width: 80%;
   height: 40%;
   align-self: center;
-  margin-bottom: 6rem;
+  margin-bottom: 7em;
 }
 
 .sunday a {
@@ -143,11 +146,12 @@
   color: #fef5f4;
 }
 
-h2 {
+/* About us */
+.h2 {
   font-family: inter;
   font-weight: 400;
   color: #9f1d1d;
-  margin-left: 3rem;
+  margin: 5rem 0 0 3rem;
 }
 
 p {
@@ -156,6 +160,54 @@ p {
   font-family: inter;
   font-weight: 300;
 }
+
+.readmore {
+  border: none;
+  background-color: inherit;
+  margin-bottom: 4rem;
+}
+
+.readmore a {
+  color: #9f1d1d;
+  font-family: inter;
+  margin-left: 3rem;
+  font-weight: 500;
+}
+
+.readmore a:hover {
+  color: #e55959;
+}
+/* Slideshow */
+
+.image {
+  background-image: url();
+}
+
+.maps {
+  background-image: url("../../public/Sakura_kort-kopi.png");
+  background-size: cover;
+  aspect-ratio: 768/1150;
+  margin: 1rem 1rem 4rem 3rem;
+  width: 80%;
+  background-color: inherit;
+  border: none;
+}
+
+.maps:hover {
+  outline: 3px solid #9f1d1d;
+}
+
+.mapsinfo {
+}
+
+.stayupdated {
+  font-family: inter;
+  font-weight: 400;
+  color: #9f1d1d;
+  font-size: 3vw;
+  text-align: center;
+}
+
 /* ************************************************************************************************************ */
 @media (min-width: 600px) {
   #first_words {
@@ -176,6 +228,7 @@ p {
     font-family: inter;
     margin: 0;
     font-size: 1.5vw;
+    text-align: center;
   }
 
   #splash_words {
@@ -274,5 +327,105 @@ p {
     font-family: inter;
     font-weight: 400;
     letter-spacing: 1px;
+  }
+  /* About us */
+  .h2 {
+    font-family: inter;
+    font-weight: 400;
+    color: #9f1d1d;
+    margin: 5rem 0 0 10rem;
+    font-size: 3vw;
+  }
+
+  p {
+    margin-left: 10rem;
+    font-size: 2vw;
+    width: 70vw;
+    font-family: inter;
+    font-weight: 300;
+  }
+
+  .readmore {
+    border: none;
+    background-color: inherit;
+    margin-bottom: 2rem;
+  }
+
+  .readmore a {
+    color: #9f1d1d;
+    font-family: inter;
+    margin-left: 10rem;
+    font-weight: 500;
+    font-size: 1.3vw;
+  }
+
+  .readmore a:hover {
+    color: #e55959;
+  }
+  /* Slideshow */
+
+  .image {
+    background-image: url();
+  }
+
+  .mapsinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row;
+    justify-content: space-around; */
+  }
+
+  .maps {
+    background-image: url("../../public/Sakura_kort-kopi.png");
+    background-size: cover;
+    aspect-ratio: 768/1150;
+    width: 200%;
+    background-color: inherit;
+    border: none;
+    margin-left: 10rem;
+    z-index: 1;
+  }
+
+  .maps:hover {
+    outline: 3px solid #9f1d1d;
+  }
+
+  .mapsinfo ul {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+
+  .stayupdated {
+    font-family: inter;
+    font-weight: 400;
+    color: #9f1d1d;
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 30rem;
+    height: 3rem;
+    /* padding: 50px; */
+    font-size: 16px;
+    border: 1px solid #9f1d1d;
+    background-color: inherit;
+    border-radius: 4px;
+    margin-bottom: 5rem;
+    align-items: space-between;
+    color: grey;
+  }
+
+  label {
+    font-family: inter;
+    margin: 0.5rem;
   }
 }
