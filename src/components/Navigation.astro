@@ -4,7 +4,7 @@ import "../styles/style2.css";
 
 <header>
   <li class="logo">
-    <a href="/index"><img src="../../public/logo.png" alt="logo" /></a>
+    <a href="/index"><img src="../logo.png" alt="logo" /></a>
     <div class="text">22/4 - 23/4</div>
   </li>
 
@@ -455,7 +455,7 @@ h3 {
     document.querySelector(".hour").innerHTML = textHour > 0 ? textHour : 0;
     document.querySelector(".minute").innerHTML = textMinute > 0 ? textMinute : 0;
     document.querySelector(".second").innerHTML = textSecond > 0 ? textSecond : 0;
-}
+  }
 
 //run every 500ms
 setInterval(countdown, 500);

@@ -3,7 +3,7 @@
 }
 @font-face {
   font-family: inter;
-  src: url("../../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+  src: url("../../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
 
 #bgi {
@@ -197,7 +197,7 @@ p {
 
 /* Kort og info */
 .maps {
-  background-image: url("../../public/Sakura_kort-kopi.png");
+  background-image: url("../Sakura_kort-kopi.png");
   background-size: cover;
   aspect-ratio: 768/1150;
   margin: 1rem 1rem 4rem 2rem;
