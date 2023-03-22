@@ -36,4 +36,8 @@ p {
   font-family: Jost;
 }
 
-
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 250px));
+  gap: 20px;
+}
