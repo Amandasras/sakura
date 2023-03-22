@@ -1,17 +1,16 @@
 ---
-// const header = Astro.props.header;
-// const text = Astro.props.text;
-
-// const {header, text}=Astro.props;
-/* const { name, image, location, from, to } = Astro.props; */
+const header = Astro.props.header;
+const text = Astro.props.text;
+const {header, text}=Astro.props;
+const { name, image, location, from, to } = Astro.props; */
 ---
 
-<!-- <article class="card">
+<article class="card">
   <h2>{name}</h2>
   <img src={image} alt="" />
   <p>{location}</p>
   <slot />
-</article> -->
+</article>
 
 
 <div class="card-container">
@@ -20,24 +19,9 @@
     <img src="png/karatekids.png" alt="Card Image" width="400" height="320">
     <h5 class="card-title">Headline</h5>
   </div>
-  <div class="card-container"></div>
-  <div class="card-body">
-    <p class="card-text">Main Stage</p>
-    <p class="card-text">KL. 10:00 - 12:00 </p>
-  </div>
+ </div>
 </div>
-<div class="card">
-  <div class="card-img-container">
-    <img src="png/karatekids.png" alt="Card Image" width="400" height="320">
-    <h5 class="card-title">Headline</h5>
-  </div>
-  <div class="card-container"></div>
-  <div class="card-body">
-    <p class="card-text">Main Stage</p>
-    <p class="card-text">KL. 10:00 - 12:00 </p>
-  </div>
-</div>
-</div>
+
 
 <style>
 
