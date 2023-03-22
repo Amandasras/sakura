@@ -470,8 +470,45 @@ label {
   }
   /* Slideshow */
 
-  .image {
-    background-image: url();
+  .slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .slideshow-slide {
+    display: none;
+  }
+
+  .slideshow-slide.active {
+    display: block;
+  }
+
+  .slideshow-prev,
+  .slideshow-next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .slideshow-prev {
+    left: 0;
+  }
+
+  .slideshow-next {
+    right: 0;
+  }
+
+  .slideshow-prev:hover,
+  .slideshow-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   /* Kort og info */

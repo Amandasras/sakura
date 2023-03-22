@@ -43,7 +43,19 @@ import "../styles/indexstyle.css";
 
     <button class="readmore"> <a href="/aboutus">READ MORE</a></button>
 
-    <div class="image"></div>
+    <div class="slideshow-container">
+      <div class="slideshow-slide">
+        <img src="../../public/karatebørn.jpg" />
+      </div>
+      <div class="slideshow-slide">
+        <img src="../../public/kimonodamejpg" />
+      </div>
+      <div class="slideshow-slide">
+        <img src="../../public/wakaido.jpg" />
+      </div>
+      <a class="slideshow-prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="slideshow-next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
 
     <h2 class="h2">MAPS</h2>
     <article class="mapsinfo">
@@ -89,4 +101,5 @@ import "../styles/indexstyle.css";
       <button class="submit"><a href="/#">SUBMIT</a></button>
     </div>
   </section>
+  <script src="../../index"></script>
 </Layout>
