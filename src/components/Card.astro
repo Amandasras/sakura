@@ -1,16 +1,17 @@
 ---
-const header = Astro.props.header;
-const text = Astro.props.text;
+// const header = Astro.props.header;
+// const text = Astro.props.text;
 const { header, text } = Astro.props;
-const { name, image, location, from, to } = Astro.props;
+const { name, image, location, from, to } = Astro.props.data;
+const imgSrc = `./png/${image}`;
 ---
 
 <article class="card">
   <h2>{name}</h2>
-  <img src={image} alt="" />
+  <img src={imgSrc} alt="" />
   <p>{location}</p>
-  <p>{from}</p>
-  <p>{to}</p>
+  <p>{from} - {to}</p>
+  <p></p>
   <slot />
 </article>
 
