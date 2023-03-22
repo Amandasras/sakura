@@ -35,76 +35,147 @@ import Layout from "../layout/Layout.astro";
         flex-direction: row;
         /* justify-content: space-between; */
     }
+    body {
+        background-image: url(../../gren2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .img1 {
         width:40vh;
         height: 30vh;
-        margin: 2%;
+        margin: 3%;
     }
     .tekst1 {
-        width: 50vw;
+        width: 40vw;
         margin-left: 5%;
         margin-top: 2%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 0.9rem;
-        margin: 2%;
+        font-size: 0.7rem;
+        text-align: justify;
     } 
     .tekst2 {
         margin-top: 3%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 66vh;
-        margin-left: 2%;
-        
+        margin-left: 5%;
+        text-align: justify;
     }
+    .tekst3 {
+        margin-top: 3%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.7rem;
+        width: 66vh;
+        margin-left: 5%;
+        text-align: justify;
+    }
+    
     h1 {
         margin-top: 5%;
         margin-left: 5%;
     }
     .img2 {
-        width:50vh;
-        height: 40vh;
-        margin-left: 12%;
+        width:67vh;
+        height: 45vh;
+        margin-left: -5%;
         margin-top: 4%;
+        margin: 4%;
     }
     .img3 {
-        width:50vh;
-        height: 40vh;
-        margin-left: 12%;
+        width:67vh;
+        height: 45vh;
+        margin-left: 16%;
         margin-top: 2%;
+        margin: 4%;
     }
+
     @media screen and (min-width: 1400px){
         h1 {
             font-size: 2.7rem;
+            margin-left: 9%;
         }
         .tekst1 {
-            font-size: 1.3rem;
-            margin-left: 5%;
-            
-            
+            font-size: 1.7rem;
+            margin-left: 9%;
+            margin-top: 2.5%;
+            width: 69vh;
+            text-align: justify;
         }
         .img1 {
-            width: 90vh;
+            width: 70vh;
             height: 50vh;
-            margin-left: 10%;
+            padding: 2px;
+            margin-left: 3%;
+        }
+        .tekst2 {
+            font-size: 1.5rem;
+            margin-left: 9%;
+            text-align: justify;
+        }
+        .tekst3 {
+            font-size: 1.5rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 51%;
+            margin-top: -31.5%;
+            width: 66vh;
+            text-align: justify;
+        }
+        .img2 {
+            width: 66vh;
+            height: 43vh;
+            margin-left: 9%;
+            margin-top: 5%;
+        }
+        .img3 {
+            width: 66vh;
+            height: 43vh;
+            margin-left: 51%;
+            margin-top: -35%;
+        }
+      
+    }
+    @media screen and (min-width: 900px){
+        h1 {
+            font-size: 2.2rem;
+            margin-left: 9%;
+        }
+        .tekst1 {
+            font-size: 1.2rem;
+            margin-left: 9%;
+            margin-top: 2.5%;
+            width: 69vh;
+            text-align: justify;
+        }
+        .img1 {
+            width: 67vh;
+            height: 50vh;
+            padding: 2px;
+            margin-left: 3%;
         }
         .tekst2 {
             font-size: 1.2rem;
-            margin-left: 10%;
+            margin-left: 8.5%;
+            text-align: justify;
         }
         .tekst3 {
             font-size: 1.2rem;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin-left: 55%;
-            margin-top: -21.5%;
+            margin-left: 54%;
+            margin-top: -44%;
+            width: 66vh;
+            text-align: justify;
         }
         .img2 {
-            width: 90vh;
-            height: 60vh;
-            margin-left: 8%;
+            width: 66vh;
+            height: 43vh;
+            margin-left: 8.5%;
+            margin-top: 5%;
         }
         .img3 {
-            width: 90vh;
-            height: 60vh;
+            width: 66vh;
+            height: 43vh;
+            margin-left: 53.5%;
+            margin-top: -35%;
         }
       
     }
