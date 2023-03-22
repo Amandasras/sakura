@@ -30,6 +30,10 @@ import Layout from "../layout/Layout.astro";
 </Layout>
 
 <style>
+    @font-face{
+        font-family: inter;
+        src: url("../../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+    }
     .grid_1-1 {
         display: flex;
         flex-direction: row;
@@ -49,13 +53,13 @@ import Layout from "../layout/Layout.astro";
         width: 40vw;
         margin-left: 5%;
         margin-top: 2%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 0.9rem;
+        font-family: inter;
+        font-size: 0.8rem;
         text-align: justify;
     } 
     .tekst2 {
         margin-top: 3%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: inter;
         font-size: 0.8rem;
         width: 57vh;
         margin-left: 5%;
@@ -63,14 +67,15 @@ import Layout from "../layout/Layout.astro";
     }
     .tekst3 {
         margin-top: 3%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.8rem;
+        font-family: inter;
         width: 57vh;
         margin-left: 5%;
         text-align: justify;
     }
     h1 {
         font-size: 2rem;
+        font-family: inter;
         margin-top: 5%;
         margin-left: 5%;
     }
@@ -89,58 +94,13 @@ import Layout from "../layout/Layout.astro";
         margin: 4%;
     }
 
-    @media screen and (min-width: 1400px){
-        h1 {
-            font-size: 5rem;
-            margin-left: 9%;
-        }
-        .tekst1 {
-            font-size: 1.7rem;
-            margin-left: 9%;
-            margin-top: 2.5%;
-            width: 69vh;
-            text-align: justify;
-        }
-        .img1 {
-            width: 70vh;
-            height: 50vh;
-            padding: 2px;
-            margin-left: 10%;
-        }
-        .tekst2 {
-            font-size: 1.5rem;
-            margin-left: 9%;
-            text-align: justify;
-        }
-        .tekst3 {
-            font-size: 1.5rem;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin-left: 51%;
-            margin-top: -30.5%;
-            width: 66vh;
-            text-align: justify;
-        }
-        .img2 {
-            width: 66vh;
-            height: 43vh;
-            margin-left: 9%;
-            margin-top: 5%;
-        }
-        .img3 {
-            width: 66vh;
-            height: 43vh;
-            margin-left: 51%;
-            margin-top: -30%;
-        }
-      
-    }
     @media screen and (min-width: 900px){
         h1 {
             font-size: 2.2rem;
             margin-left: 6%;
         }
         .tekst1 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-left: 6%;
             margin-top: 2.5%;
             width: 69vh;
@@ -153,17 +113,16 @@ import Layout from "../layout/Layout.astro";
             margin-left: 3%;
         }
         .tekst2 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-left: 6%;
             text-align: justify;
-        margin-top: 1%;
+            margin-top: 1%;
         }
     
         .tekst3 {
-            font-size: 1.2rem;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            margin-left: 54%;
-            margin-top: -42%;
+            font-size: 1.1rem;
+            font-family: inter;            margin-left: 54%;
+            margin-top: -44%;
             width: 55vh;
             text-align: justify;
         }
@@ -181,4 +140,52 @@ import Layout from "../layout/Layout.astro";
         }
       
     }
+
+    @media screen and (min-width: 1400px){
+        h1 {
+            font-size: 3rem;
+            margin-left: 11%;
+        }
+        .tekst1 {
+            font-size: 1.4rem;
+            margin-left: 11%;
+            margin-top: 2.5%;
+            width: 69vh;
+            text-align: justify;
+        }
+        .img1 {
+            width: 70vh;
+            height: 50vh;
+            padding: 2px;
+            margin-left: 10%;
+        }
+        .tekst2 {
+            font-size: 1.4rem;
+            margin-left: 11%;
+            text-align: justify;
+            width: 66vh;
+        }
+        .tekst3 {
+            font-size: 1.4rem;
+            font-family: inter;           
+            margin-left: 55%;
+            margin-top: -38%;
+            width: 66vh;
+            text-align: justify;
+        }
+        .img2 {
+            width: 66vh;
+            height: 43vh;
+            margin-left: 9%;
+            margin-top: 4%;
+        }
+        .img3 {
+            width: 66vh;
+            height: 43vh;
+            margin-left: 55%;
+            margin-top: -31%;
+        }
+      
+    }
+    
 </style>
