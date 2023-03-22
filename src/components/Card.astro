@@ -6,12 +6,17 @@ const { name, image, location, from, to } = Astro.props.data;
 const imgSrc = `./png/${image}`;
 ---
 
-<article class="card">
-  <h2 class="card-title">{name}</h2>
+<article class="card-container">
+  <div class="card">
+  <div class="card-img-container">
   <img src={imgSrc} alt="" />
+  <h2 class="card-title">{name}</h2>
+ </div>
+<div class="card-text">
   <p>{location}</p>
   <p>{from} - {to}</p>
-  <p></p>
+</div>
+</div>
   <slot />
 </article>
 
@@ -25,17 +30,14 @@ const imgSrc = `./png/${image}`;
 
 <style>
   .card-container {
-    /* display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(480px, 250px));
-    gap: 20px; */
+    gap: 20px;
   }
 
   .card {
     width: 480px;
     margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 250px));
-    gap: 20px;
   }
 
   .card-img-container {
