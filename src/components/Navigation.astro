@@ -1,5 +1,6 @@
 ---
 import "../styles/style2.css";
+import Layout from "../layout/Layout.astro";
 ---
 
 <header>
@@ -19,9 +20,9 @@ import "../styles/style2.css";
       <span></span>
     </button>
     <ul class="links">
-      <li><a href="/program.astro">PROGRAM</a></li>
-      <li><a href="/yourprogram.astro">YOUR PROGRAM</a></li>
-      <li><a href="/about.astro">ABOUT US</a></li>
+      <li><a href="/program">PROGRAM</a></li>
+      <li><a href="#">YOUR PROGRAM</a></li>
+      <li><a href="/about">ABOUT US</a></li>
       <li><a href="#">NAVIGATION</a></li>
       <li><a href="#">BECOME A VOLUNTEER</a></li>
     </ul>
@@ -203,7 +204,7 @@ h3 {
 
 @media screen and (min-width: 400px){
   .countdown {
-    font-size: 12px;
+    font-size: 9px;
     margin-top: -7%;
     margin-left: 10%;
   }
@@ -218,7 +219,7 @@ h3 {
 }
   
   h3 {
-    font-size: 12px;
+    font-size: 9px;
     margin-left: 100%;
     margin-top: -10%;
   }
@@ -229,23 +230,24 @@ h3 {
   }
   .text {
     margin-left: 200%;
-    font-size: 0.7rem;
+    font-size: 10px;
   }
 .day,
 .hour,
 .minute, 
 .second {
-    font-size: 12px;
+    font-size: 9px;
     margin-right: 1rem;
     margin-left: 110%;
+    margin-top: -30%;
     
 }
 }
 @media screen and (min-width: 500px){
   .countdown {
-    font-size: 13px;
-    margin-top: -5%;
-    margin-left: 10%;
+    font-size: 10px;
+    margin-top: -8%;
+    margin-left: 5%;
   }
   .links a {
     color: #fef5f4;
@@ -257,23 +259,23 @@ h3 {
   margin-top: 6%;
 }
   h3 {
-    font-size: 12px;
+    font-size: 10px;
     margin-left: 80%;
   }
   .logo {
-    width:12%;
-    margin-left: -6%;
-    margin-top: -5%;
+    width:8%;
+    margin-left: -4%;
+    
   }
   .text {
     margin-left: 190%;
-    font-size: 0.9rem;
+    font-size: 10px;
   }
 .day,
 .hour,
 .minute, 
 .second {
-    font-size: 13px;
+    font-size: 10px;
     margin-right: 2rem;
     margin-left: 85%;
     
@@ -281,9 +283,9 @@ h3 {
 }
 @media screen and (min-width: 700px){
   .countdown {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: -4%;
-    margin-left: 9%;
+    margin-left: 5%;
   }
   .links a {
     color: #fef5f4;
@@ -295,30 +297,31 @@ h3 {
   margin-top: 5%;
 }
   h3 {
-    font-size: 12px;
+    font-size: 11px;
+    margin-left: 80%;
   }
   .logo {
-    width:10%;
+    width:7%;
     margin-left: -3%;
     margin-top: -3%;
   }
   .text {
-    margin-left: 170%;
+    margin-left: 180%;
+    font-size: 11px;
   }
 .day,
 .hour,
 .minute, 
 .second {
-    font-size: 16px;
-    margin-right: 1.8rem;
+    font-size: 11px;
     
 }
 }
 @media screen and (min-width: 900px){
   .countdown {
-    font-size: 16px;
+    font-size: 13px;
     margin-top: -3%;
-    margin-left: 10%;
+    margin-left: 8%;
   }
   .links a {
     color: #fef5f4;
@@ -330,31 +333,32 @@ h3 {
   margin-top: 7%;
 }
   h3 {
-    font-size: 16px;
+    font-size: 13px;
+    margin-left: 40%;
   }
   .logo {
-    width:8%;
+    width:6%;
     margin-left: -1%;
     margin-top: -1%;
   }
   .text {
-    margin-left: 190%;
-    font-size: 16px;
+    margin-left: 185%;
+    font-size: 13px;
   }
 .day,
 .hour,
 .minute, 
 .second {
-    font-size: 16px;
-    margin-right: 1.8rem;
+    font-size: 13px;
+    margin-left: 45%;
     
 }
 }
 @media screen and (min-width: 1200px){
   .countdown {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: -3%;
-    margin-left: 13%;
+    margin-left: 5%;
   }
   .links a {
     color: #fef5f4;
@@ -366,31 +370,30 @@ h3 {
   margin-top: 5%;
 }
   h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .logo {
-    width:9%;
+    width:5%;
     margin-left: -1%;
-    margin-top: 1%;
+
   }
   .text {
-    margin-left: 164%;
-    font-size: 25px;
+    margin-left: 190%;
+    font-size: 15px;
   }
 .day,
 .hour,
 .minute, 
 .second {
-    font-size: 22px;
+    font-size: 15px;
     margin-right: 1.8rem;
-    padding: 5px;
 }
 }
 @media screen and (min-width: 1400px){
   .countdown {
     font-size: 20px;
-    margin-top: -3%;
-    margin-left: 11%;
+    margin-top: -2%;
+    margin-left: 5%;
   }
   .links a {
     color: #fef5f4;
@@ -402,24 +405,23 @@ h3 {
   margin-top: 3%;
 }
   h3 {
-    font-size: 22px;
+    font-size: 15px;
   }
   .logo {
-    width:7%;
+    width:5%;
     margin-left: -1%;
-    margin-top: 0%;
   }
   .text {
     margin-left: 188%;
-    font-size: 23px;
+    font-size: 18px;
   }
 .day,
 .hour,
 .minute, 
 .second {
-    font-size: 22px;
+    font-size: 15px;
     margin-right: 1rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 

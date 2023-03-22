@@ -1,29 +1,111 @@
 ---
 import "../styles/style2.css";
+import Layout from "../layout/Layout.astro";
 ---
 
-<header>
-  <li class="logo">
-    <a href="/index"><img src="../logo.png" alt="logo" /></a>
-    <div class="text">22/4 - 23/4</div>
-  </li>
+<Layout>
+<body>
+    <h1>ABOUT US</h1>
+    <section class="grid_1-1">
+        <p class="tekst1">Welcome to the Copenhagen Sakura Festival. <br><br>
+            Our festival is a celebration of the blooming of cherry blossom trees, known as sakura in Japanese. 
+            The festival is a cultural event that brings together people from different backgrounds to appreciate
+            the beauty of nature and celebrate new beginnings.
+        </p>
+        <img src="/png/about1.webp" alt="festival" class="img1">
+    </section>
+        <p class="tekst2">The Committee of the Copenhagen Sakura Festival was established in February 2008 with the goal of arranging the annual cultural event in collaboration with the Japanese Embassy in Denmark, the Municipality of Copenhagen, and other Japan-related cultural and private organizations. Our festival is made possible by the generous donations and support of our partners.
+            <br><br>The original idea for the Copenhagen Sakura Festival came from the donation of 200 cherry blossom trees by Mr. Seiichi Takaki, President of Andersen Institute of Bread & Life, and his employees. The donated trees were planted in Langelinie Park, where they continue to bloom each year, providing a beautiful backdrop for our festival.
+        </p>
+        <p class="tekst3">In Japan, sakura is a beloved flower that symbolizes the fleeting nature of life and the beauty that can be found in fleeting moments. The Copenhagen Sakura Festival aims to bring that same spirit to Denmark, where people can come together to enjoy the beauty of nature and connect with others under the sakura trees.
+            Our Committee is honored to have the Honorable Chairpersons H.E. the Ambassador of Japan to Denmark and the Lord Mayor of the City of Copenhagen. The Committee is made up of representatives from Japan-related businesses, cultural and private organizations, the Municipality of Copenhagen, and the Japanese Embassy.
+            <br><br>We hope you will join us in celebrating the Copenhagen Sakura Festival and the beauty of sakura. Thank you for visiting our website, and we look forward to seeing you at the festival!
+        </p>
+    <section class="grid_1-2">
+        <img src="/png/about2.webp" alt="festival2" class="img2">
+        <img src="/png/about3.webp" alt="festival3" class="img3">
+    </section>
+    <br><br>
+</body>
+</Layout>
 
-  <button class="hamburger" aria-label="Toggle Menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <nav class="menu">
-    <button class="close-menu" aria-label="Close Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="links">
-      <li><a href="/program">PROGRAM</a></li>
-      <li><a href="/#">YOUR PROGRAM</a></li>
-      <li><a href="/about">ABOUT US</a></li>
-      <li><a href="#">NAVIGATION</a></li>
-      <li><a href="#">BECOME A VOLUNTEER</a></li>
-    </ul>
-  </nav>
-</header>
+<style>
+    .grid_1-1 {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+    .img1 {
+        width:40vh;
+        height: 30vh;
+        margin: 2%;
+    }
+    .tekst1 {
+        width: 50vw;
+        margin-left: 5%;
+        margin-top: 2%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.9rem;
+        margin: 2%;
+    } 
+    .tekst2 {
+        margin-top: 3%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.8rem;
+        width: 66vh;
+        margin-left: 2%;
+        
+    }
+    h1 {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .img2 {
+        width:50vh;
+        height: 40vh;
+        margin-left: 12%;
+        margin-top: 4%;
+    }
+    .img3 {
+        width:50vh;
+        height: 40vh;
+        margin-left: 12%;
+        margin-top: 2%;
+    }
+    @media screen and (min-width: 1400px){
+        h1 {
+            font-size: 2.7rem;
+        }
+        .tekst1 {
+            font-size: 1.3rem;
+            margin-left: 5%;
+            
+            
+        }
+        .img1 {
+            width: 90vh;
+            height: 50vh;
+            margin-left: 10%;
+        }
+        .tekst2 {
+            font-size: 1.2rem;
+            margin-left: 10%;
+        }
+        .tekst3 {
+            font-size: 1.2rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 55%;
+            margin-top: -21.5%;
+        }
+        .img2 {
+            width: 90vh;
+            height: 60vh;
+            margin-left: 8%;
+        }
+        .img3 {
+            width: 90vh;
+            height: 60vh;
+        }
+      
+    }
+</style>
