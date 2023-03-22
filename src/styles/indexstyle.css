@@ -32,7 +32,7 @@
 #first_words p {
   align-self: center;
   font-family: inter;
-  margin: 0;
+  margin: 2em;
   font-size: 2.5vw;
   text-align: center;
 }
@@ -68,33 +68,36 @@
 
 .martial_arts {
   color: #9f1d1d;
-  font-size: 8vw;
+  font-size: 7vw;
   font-family: inter;
   text-align: center;
   grid-column: 1/5;
   grid-row: 2/3;
-  margin: 0 3.1em 3em 0;
+  margin: 0 1.6em 0.5em 0;
 }
 
 .music {
   font-family: inter;
   color: #fef5f4;
-  font-size: 8vw;
+  font-size: 7vw;
   font-weight: 700;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #bf5468;
   text-align: center;
   grid-column: 3/6;
   grid-row: 2/3;
-  margin: 0 0 0 7.3em;
+  margin: 0 0 0 8.2em;
 }
 #lastwords {
   list-style: circle #bf5468;
-  font-size: 2vw;
+  font-size: 2.5vw;
+  font-weight: 300;
+  font-family: inter;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5rem;
+  margin: 0 0 3em 0;
 }
 
 /* Knapper */
@@ -160,12 +163,16 @@
 /* About us */
 .h2 {
   font-family: inter;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
   color: #9f1d1d;
   margin: 5rem 0 0 3rem;
   font-size: 5vw;
 }
 
+.copybaggrund {
+  background-color: #fef5f487;
+}
 p {
   margin-left: 3rem;
   width: 70vw;
@@ -200,8 +207,8 @@ p {
   background-image: url("/Sakura_kort-kopi.png");
   background-size: cover;
   aspect-ratio: 768/1150;
-  margin: 1rem 1rem 4rem 2rem;
-  width: 80%;
+  margin: 1rem 0 4rem 2rem;
+  width: 60%;
   background-color: inherit;
   border: none;
 }
@@ -211,9 +218,23 @@ p {
 }
 
 .mapsinfo {
-  text-align: center;
+  text-align: left;
   align-self: center;
+  justify-self: center;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.mapsinfo ul {
+  margin-top: 10em;
+  padding: 0;
+  width: 65px;
+}
+
+.mapsinfo p {
+  margin: 0 0 0 1em;
 }
 
 /* Nyhedsbrev */
@@ -307,14 +328,14 @@ label {
     align-self: center;
     font-family: inter;
     color: #bf5468;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 300;
     font-size: 3vw;
   }
   #first_words p {
     align-self: center;
     font-family: inter;
-    margin: 0;
+    margin: 2em;
     font-size: 1.5vw;
     text-align: center;
   }
@@ -353,7 +374,7 @@ label {
     text-align: center;
     grid-column: 1/5;
     grid-row: 2/3;
-    margin: 0 2em 1em 2em;
+    margin: 0 2em 0.5em 2em;
   }
 
   .music {
@@ -365,7 +386,18 @@ label {
     text-align: center;
     grid-column: 3/6;
     grid-row: 2/3;
-    margin: 0 0 1em 9em;
+    margin: 0 0 0.5em 9em;
+  }
+  #lastwords {
+    list-style: circle #bf5468;
+    font-size: 2vw;
+    font-weight: 300;
+    font-family: inter;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 0 1.5em 0;
   }
 
   /* Knapper */
@@ -450,11 +482,6 @@ label {
   .readmore a:hover {
     color: #e55959;
   }
-  /* Slideshow */
-
-  .image {
-    background-image: url();
-  }
 
   /* Kort og info */
   .mapsinfo {
@@ -466,7 +493,7 @@ label {
     background-image: url("../../public/Sakura_kort-kopi.png");
     background-size: cover;
     aspect-ratio: 768/1150;
-    width: 200%;
+    width: 60%;
     background-color: inherit;
     border: none;
     margin-left: 10rem;
@@ -477,9 +504,9 @@ label {
   }
 
   .mapsinfo ul {
-    text-align: center;
+    text-align: left;
     align-self: center;
-    margin-bottom: 3rem;
+    margin-top: 0;
   }
 
   /* Nyhedsbrev */

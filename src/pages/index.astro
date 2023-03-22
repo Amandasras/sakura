@@ -1,4 +1,5 @@
 ---
+import Slideshow from "../components/Slideshow.astro";
 import Layout from "../layout/Layout.astro";
 import "../styles/indexstyle.css";
 ---
@@ -28,21 +29,21 @@ import "../styles/indexstyle.css";
     <hr />
 
     <h2 class="h2">ABOUT US</h2>
-    <p>
-      Welcome to the Copenhagen Sakura Festival, a celebration of the blooming
-      cherry blossom trees, known as sakura in Japanese. Our festival is a
-      cultural event that brings people together to appreciate the beauty of
-      nature and celebrate new beginnings. Established in 2008, the festival is
-      organized by the Committee in collaboration with the Japanese Embassy in
-      Denmark, the Municipality of Copenhagen, and other Japan-related cultural
-      and private organizations. Join us to experience the beauty of sakura and
-      connect with others in Langelinie Park.
-    </p>
+    <div class="copybaggrund">
+      <p>
+        Welcome to the Copenhagen Sakura Festival, a celebration of the blooming
+        cherry blossom trees, known as sakura in Japanese. Our festival is a
+        cultural event that brings people together to appreciate the beauty of
+        nature and celebrate new beginnings. Established in 2008, the festival
+        is organized by the Committee in collaboration with the Japanese Embassy
+        in Denmark, the Municipality of Copenhagen, and other Japan-related
+        cultural and private organizations. Join us to experience the beauty of
+        sakura and connect with others in Langelinie Park.
+      </p>
+    </div>
 
-    <button class="readmore"> <a href="/aboutus">READ MORE</a></button>
-
-    <div class="image"></div>
-
+    <button class="readmore"> <a href="/about">READ MORE</a></button>
+    <Slideshow />
     <h2 class="h2">MAPS</h2>
     <article class="mapsinfo">
       <button class="maps"><a href="/navigation"></a></button>

@@ -1,0 +1,7 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/styles/style2.css");import { updateStyle as __vite__updateStyle, removeStyle as __vite__removeStyle } from "/@vite/client"
+const __vite__id = "/Users/kristinekrause/Desktop/MMD2/TEMA 8/sakura/src/styles/style2.css"
+const __vite__css = "/* Bibliotek til vigtige generelle ting så man ikke skal huske fx farvekoder hele tiden */\n:root {\n  /* COLOR */\n  --background-color: #fef5f4;\n  --sakura-festival-food-color: #bf5468;\n  --main-red: #9f1d1d;\n  --black: #000000;\n\n  /* FONTS */\n  --body: \"Jost-VariableFont_wght.ttf\";\n  --body: \"Inter-VariableFont_slnt,wght.ttf\";\n  --h1-font-size: ;\n}\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  background: var(--background-color);\n}\n\nimg {\n  max-width: 100%;\n}\n\n@font-face {\n  font-family: \"Jost\";\n  src: url(\"../fonts/Jost/Jost-Italic-VariableFont_wght.ttf\");\n}\nh1 {\n  font-family: Inter;\n}\n\np {\n  color: rgb(0, 23, 44);\n  font-family: Jost;\n}\n\n\n"
+__vite__updateStyle(__vite__id, __vite__css)
+import.meta.hot.accept()
+export default __vite__css
+import.meta.hot.prune(() => __vite__removeStyle(__vite__id))
