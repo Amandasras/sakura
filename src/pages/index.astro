@@ -1,4 +1,5 @@
 ---
+import Slideshow from "../components/Slideshow.astro";
 import Layout from "../layout/Layout.astro";
 import "../styles/indexstyle.css";
 ---
@@ -42,21 +43,7 @@ import "../styles/indexstyle.css";
     </div>
 
     <button class="readmore"> <a href="/aboutus">READ MORE</a></button>
-
-    <div class="slideshow-container">
-      <div class="slideshow-slide">
-        <img src="../../public/karatebørn.jpg" />
-      </div>
-      <div class="slideshow-slide">
-        <img src="../../public/kimonodamejpg" />
-      </div>
-      <div class="slideshow-slide">
-        <img src="../../public/wakaido.jpg" />
-      </div>
-      <a class="slideshow-prev" onclick="changeSlide(-1)">&#10094;</a>
-      <a class="slideshow-next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
-
+    <Slideshow />
     <h2 class="h2">MAPS</h2>
     <article class="mapsinfo">
       <button class="maps"><a href="/navigation"></a></button>
@@ -101,5 +88,4 @@ import "../styles/indexstyle.css";
       <button class="submit"><a href="/#">SUBMIT</a></button>
     </div>
   </section>
-  <script src="../../index"></script>
 </Layout>
