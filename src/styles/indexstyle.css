@@ -493,7 +493,7 @@ label {
     background-image: url("../../public/Sakura_kort-kopi.png");
     background-size: cover;
     aspect-ratio: 768/1150;
-    width: 200%;
+    width: 60%;
     background-color: inherit;
     border: none;
     margin-left: 10rem;
@@ -504,9 +504,9 @@ label {
   }
 
   .mapsinfo ul {
-    text-align: center;
+    text-align: left;
     align-self: center;
-    margin-bottom: 3rem;
+    margin-top: 0;
   }
 
   /* Nyhedsbrev */
