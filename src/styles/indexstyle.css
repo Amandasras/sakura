@@ -207,8 +207,8 @@ p {
   background-image: url("/Sakura_kort-kopi.png");
   background-size: cover;
   aspect-ratio: 768/1150;
-  margin: 1rem 1rem 4rem 2rem;
-  width: 80%;
+  margin: 1rem 0 4rem 2rem;
+  width: 60%;
   background-color: inherit;
   border: none;
 }
@@ -218,9 +218,23 @@ p {
 }
 
 .mapsinfo {
-  text-align: center;
+  text-align: left;
   align-self: center;
+  justify-self: center;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.mapsinfo ul {
+  margin-top: 10em;
+  padding: 0;
+  width: 65px;
+}
+
+.mapsinfo p {
+  margin: 0 0 0 1em;
 }
 
 /* Nyhedsbrev */
